@@ -315,9 +315,9 @@ local Toggle = page2:CreateToggle({
                 task.wait(0.1)
                 s.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = npcGiver.HumanoidRootPart.CFrame;
                 task.wait(1)
-                clickButton(game:GetService("Players").LocalPlayer.PlayerGui.ScreenGui.QuestTalkBtn)
+                main.clickButton(game:GetService("Players").LocalPlayer.PlayerGui.ScreenGui.QuestTalkBtn)
                 repeat task.wait(0.1)
-                    clickButton(game:GetService("Players").LocalPlayer.PlayerGui.ScreenGui.QuestMsgFrame.Btn)
+                    main.clickButton(game:GetService("Players").LocalPlayer.PlayerGui.ScreenGui.QuestMsgFrame.Btn)
                 until not game:GetService("Players").LocalPlayer.PlayerGui.ScreenGui.QuestMsgFrame.Visible;
                 task.wait(1)
                 s.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = pos;
