@@ -6,10 +6,10 @@ local Rayfield = loadstring(game:HttpGet('https://raw.githubusercontent.com/shle
 local win = Rayfield:CreateWindow({
    Name = 'SPTS: Endless',
    LoadingTitle = ': ',
-   LoadingSubtitle = 'by Lxst ┃ lxst#2161, unofficially edited by Time#6465',
+   LoadingSubtitle = '',
    ConfigurationSaving = {
       Enabled = true,
-      FileName = 'SPTSOrigin'
+      FileName = ''
    }
 })
 -- 
