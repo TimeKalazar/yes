@@ -77,7 +77,7 @@ local page4 = win:CreateTab('Teleports')
 --
 Rayfield:Notify({
     Title = 'UI Library has loaded!',
-    Content = 'by lxst#2161',
+    Content = '',
     Duration = 5
 })
 --
@@ -87,8 +87,6 @@ page0:CreateLabel('[-] Last Update: March 12th, 2023')
 page0:CreateLabel('[-] WARNING: THERE IS A CHANCE THAT YOU CAN BE BANNED! USE WITH CAUTION')
 
 
-page0:CreateSection('Credits')
-page0:CreateLabel('[-] by lxst#2161')
 --
 page1:CreateSection('Auto Farm All Stats (excl. Psychic)')
 local Toggle = page1:CreateToggle({
