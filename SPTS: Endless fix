@@ -1,10 +1,12 @@
-repeat task.wait() until game:IsLoaded() and game.Players.LocalPlayer.Character;
+repeat
+    task.wait()
+until game:IsLoaded() and game.Players.LocalPlayer and game.Players.LocalPlayer.Character
 local Rayfield = loadstring(game:HttpGet('https://raw.githubusercontent.com/shlexware/Rayfield/main/source'))()
 
 local win = Rayfield:CreateWindow({
-   Name = 'SPTS: Origin v1.03 [STABLE]',
-   LoadingTitle = 'SPTS: Origin',
-   LoadingSubtitle = 'by Lxst ┃ lxst#2161',
+   Name = 'SPTS: Endless',
+   LoadingTitle = ': ',
+   LoadingSubtitle = 'by Lxst ┃ lxst#2161, unofficially edited by Time#6465',
    ConfigurationSaving = {
       Enabled = true,
       FileName = 'SPTSOrigin'
