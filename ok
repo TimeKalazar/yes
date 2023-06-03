@@ -80,14 +80,7 @@ Rayfield:Notify({
     Content = '',
     Duration = 5
 })
---
-page0:CreateSection('Updates')
 
-page0:CreateLabel('[-] Last Update: March 12th, 2023')
-page0:CreateLabel('[-] WARNING: THERE IS A CHANCE THAT YOU CAN BE BANNED! USE WITH CAUTION')
-
-
---
 page1:CreateSection('Auto Farm All Stats (excl. Psychic)')
 local Toggle = page1:CreateToggle({
     Name = 'Auto Farm All Stats',
@@ -105,7 +98,6 @@ local Toggle = page1:CreateToggle({
         while task.wait(0.33) do 
             if not getgenv().StatFarm then main.unequipTool() break; end;
 	    repeat task.wait() until s.Players.LocalPlayer.Character:FindFirstChild('Humanoid')
-            main.equipTool(s.Players.LocalPlayer.Backpack:FindFirstChild('Meditate'))
             for i,v in pairs(requestRemotes) do 
                 if table.find(requestRemotes, v) then 
                     task.wait(0.05)
